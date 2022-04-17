@@ -21,6 +21,10 @@
    font-family: 'Roboto', sans-serif;
 }
 
+main {
+    min-height: 65vh;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);
