@@ -1,0 +1,162 @@
+/* Color Palette */
+:root {
+    --primary-color: #008E28;
+    --title-color: #535353;
+    --footer-bg-color: #535353;
+    --footer-links-color: #FFFFFF;
+    --main-bg-color: #FFFFFF;
+    --top-menu-bar-color: #F3F3F3;
+    --card-bg-color: #F3F3F3;
+    --card-border-color: #C4C4C4;
+    --card-bg-color-light: #FFFFFF;
+    --text-color: #535353;
+}
+
+
+/* Reset */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.icon {
+    height: 19px;
+}
+
+.icon-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.top-menu, .bottom-menu {
+    padding: 0 8% 0 8%;
+}
+
+/* The top menu */
+.top-menu {
+    background-color: var(--top-menu-bar-color);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 30px;
+}
+
+.vertical-separator {
+    background-color: var(--title-color);
+    width: 2px;
+    height: 20px;
+}
+
+.top-menu > div {
+    display: flex;
+}
+
+.top-menu  a {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.top-menu a:first-child {
+    padding-right: 10px;
+}
+
+.top-menu a:last-child {
+    padding-left: 10px;
+}
+
+/* Bottom Menu */
+
+.brand {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-menu li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bottom-menu a {
+    font-weight: bold;
+}
+
+.counter {
+    background-color: var(--primary-color);
+    display: inline-block;
+    color: white;
+    border-radius: 10%;
+    padding: 2px 4px 2px 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    top: -7px;
+}
+
+
+/* Footer */ 
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--footer-bg-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10% 2% 10%;
+}
+
+footer ul  {
+    list-style: none;
+}
+
+footer ul > li {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.footer-header {
+    color: var(--footer-links-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.quick-link-icon {
+    height: 8px;
+}
+
+footer a {
+    color: var(--footer-links-color);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+.footer-blog-title {
+    font-weight: bold;
+}
+
+.footer-blog-date {
+    color: var(--footer-links-color);
+}
