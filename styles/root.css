@@ -36,7 +36,7 @@ a {
 }
 
 .top-menu, .bottom-menu {
-    padding: 0 8% 0 8%;
+    padding: 0 4% 0 4%;
 }
 
 /* The top menu */
@@ -115,8 +115,8 @@ a {
 
 /* Footer */ 
 footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     background-color: var(--footer-bg-color);
     width: 100%;
     display: flex;
