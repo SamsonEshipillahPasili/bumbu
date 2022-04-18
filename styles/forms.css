@@ -30,7 +30,7 @@ form {
     margin-bottom: 7px;
 }
 
-.form-group > input.form-control {
+.form-group > input.form-control,  .form-group > textarea.form-control{
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -41,7 +41,7 @@ form {
     color: #6f6f6f;
 }
 
-.form-group > input.form-control:focus {
+.form-group > input.form-control:focus,  .form-group > textarea.form-control:focus{
     border: 2px solid var(--primary-color);
 }
 
