@@ -1,0 +1,25 @@
+h1.faq {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2.faq {
+    color: var(--primary-color);
+    font-size: 17px;
+}
+
+p.faq {
+    margin-top: 14px;
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+div.faq {
+    margin-top: 15px;
+}
+
+div.faq-wrapper {
+    width: 60rem;
+}
