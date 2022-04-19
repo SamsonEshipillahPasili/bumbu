@@ -1,0 +1,58 @@
+.filters {
+    width: 20%;
+    background-color: var(--card-bg-color);
+    padding: 30px;
+    border: 1px solid var(--card-border-color);
+    border-radius: 5px;
+}
+
+.filters h1 {
+    font-size: 17px;
+    color: var(--primary-color);
+    margin: 15px 0 15px 0;
+}
+
+.single-category {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.single-category label {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.price-range-filter input[type="text"] {
+    display: inline-block;
+    width: 90px;
+    padding: 3px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.horizontal-separator {
+    width: 20px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+
+.price-range-filter .inputs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-range-filter {
+    margin-top: 35px;
+}
+
+#filter-btn {
+    display: inline-block;
+    width: 40%;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
