@@ -1,0 +1,45 @@
+.blogs-container {
+    margin: 4% 4% 0 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-blog {
+    margin-right: 4%;
+    width: 80%;
+}
+
+.current-blog h1 {
+    color: var(--title-color);
+}
+
+.heading-2-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--title-color);
+    margin: 3% 0 3% 0;
+}
+
+.blogs {
+    width: 20%;
+}
+
+.blogs div {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.blog-body {
+    color: var(--title-color);
+}
+
+.blogs h1 {
+    color: var(--primary-color);
+    font-size: 23px;
+}
+
+.blogs .heading-2-wrapper {
+    margin: 6% 0 6% 0;
+    font-size: 9px;
+}
