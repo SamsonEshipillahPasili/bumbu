@@ -1,5 +1,10 @@
+.home-container {
+    margin: 1%;
+}
+
 .filters {
     width: 20%;
+    height: min-content;
     background-color: var(--card-bg-color);
     padding: 30px;
     border: 1px solid var(--card-border-color);
@@ -55,4 +60,59 @@
     font-size: 15px;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+.product {
+    width: 165px;
+    border: 1px solid var(--card-border-color);
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.product h2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.product .product-btn {
+    display: inline-block;
+    width: 60%;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 7px 0 7px 0;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.product .product-btn:hover {
+    opacity: .8;
+}
+
+
+.home-container {
+    display: flex;
+}
+
+.products {
+    padding: 0 10px 10px 1.5rem;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(6, 1fr);
 }
