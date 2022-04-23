@@ -164,3 +164,9 @@ footer a:hover {
 .footer-blog-date {
     color: var(--footer-links-color);
 }
+
+/* Utils */
+.center {
+    display: flex;
+    justify-content: center;
+}
