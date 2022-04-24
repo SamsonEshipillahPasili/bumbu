@@ -1,0 +1,11 @@
+div.order-details {
+   display: flex; 
+   justify-content: space-evenly;
+   width: 650px;
+   margin: 40px 0 20px 0;
+}
+
+.order-details h1 {
+    font-size: 16px;
+    color: var(--title-color);
+}
