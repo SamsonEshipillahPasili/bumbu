@@ -1,0 +1,16 @@
+table.orders {
+    border: 1px solid var(--card-border-color);
+    margin-top: 2rem;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.orders th, td {
+    padding: 22px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.orders th {
+    color: var(--primary-color);
+}
