@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Bumbu | FAQ {% endblock %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'styles/forms.css' %}">
+<link rel="stylesheet" href="{% static 'styles/faq.css' %}">
+{% endblock %}
+
+{% block main %}
+<div class="center">
+    <div class="faq-wrapper">
+        <h1 class="faq">FREQUENTLY ASKED QUESTIONS</h1>
+        {% if faqs|length == 0 %}
+        <div class="center">
+            <h2 style="margin-top: 20px;" class="faq">No FAQs found at the moment</h2>
+        </div>
+        {% else %}
+        {% for faq in faqs %}
+        <div class="faq">
+            <h2 class="faq">{{ faq.title }}</h2>
+            <p class="faq">{{ faq.description }}</p>
+        </div>
+        {% endfor %}
+
+        {% endif %}
+    </div>
+    {% endblock %}

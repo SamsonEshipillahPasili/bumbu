@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
+    <title>
+        {% block title %}Bumbu{% endblock %}
+    </title>
 
     <!-- Roboto Font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     </style>
-    <link rel="stylesheet" href="/styles/root.css">
+    <link rel="stylesheet" href="{% static 'styles/root.css' %}">
+    {% block links %}{% endblock %}
 </head>
 
 <body>
@@ -34,13 +39,13 @@
             <ul>
                 <li style="position: relative; margin-right: 30px;">
                     <a class="icon-link" href="#">
-                        <img class="icon" src="/images/shopping-cart.svg" alt="cart" />
+                        <img class="icon" src="{% static 'images/shopping-cart.svg' %}" alt="cart" />
                     </a>
                     <span class="counter">20</span>
                 </li>
                 <li style="position: relative; margin-right: 16px;">
                     <a href="#" class="icon-link">
-                        <img class="icon" src="/images/heart.svg" alt="cart" />
+                        <img class="icon" src="{% static 'images/heart.svg' %}" alt="cart" />
                     </a>
                     <span class="counter">20</span>
                 </li>
@@ -48,7 +53,7 @@
         </div>
     </nav>
     <main>
-
+        {% block main %}{% endblock %}
     </main>
     <footer>
         <div>
@@ -59,25 +64,25 @@
             <ul>
                 <li>
                     <a href="">
-                        <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                        <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                         <span>Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                        <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                         <span>Blog</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                        <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                         <span>Terms & Conditions</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                        <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                         <span>FAQ</span>
                     </a>
                 </li>
@@ -88,7 +93,7 @@
             <ul>
                 <li>
                     <a href="">
-                        <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                        <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                         <span>Contact Us</span>
                     </a>
                 </li>
@@ -101,21 +106,21 @@
                     <ul>
                         <li>
                             <a href="" class="footer-blog-title">
-                                <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                                <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                                 <span>Why Bumbu Sauce</span>
                             </a>
                             <p class="footer-blog-date">2nd August 2018</p>
                         </li>
                         <li>
                             <a href="" class="footer-blog-title">
-                                <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                                <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                                 <span>Why Bumbu Sauce</span>
                             </a>
                             <p class="footer-blog-date">2nd August 2018</p>
                         </li>
                         <li>
                             <a href="" class="footer-blog-title">
-                                <img class="quick-link-icon" src="/images/quick-link-icon.svg" alt='quick-link-icon' />
+                                <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                                 <span>Why Bumbu Sauce</span>
                             </a>
                             <p class="footer-blog-date">2nd August 2018</p>
