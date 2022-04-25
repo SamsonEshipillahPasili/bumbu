@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'faq'
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'bumbu.urls'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
 
 TEMPLATES = [
     {
