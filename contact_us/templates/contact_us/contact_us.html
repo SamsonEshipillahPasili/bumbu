@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Bumbu | Contact Us {% endblock %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'styles/forms.css' %}">
+{% endblock %}
+
+{% block main %}
+<div class="center">
+    <form method="post" action="{% url 'contact_us:contact-us' %}">
+        {% csrf_token %}
+        <h2 class="form-heading center">Contact Us</h2>
+        {% if ack == '1' %}
+        <p class="alert alert-success">Thank you! We will get in touch within 24 hours.</p>
+        {% endif %}
+
+        {% if form.errors %}
+        <div class="alert alert-danger">
+            <h1>Correct the errors below</h1>
+            {{ form.errors }}
+        </div>
+        {% endif %}
+
+        <div class="form-group">
+            <label>Enter your email address</label>
+            <input value="{{ form.data.email }}" class="form-control" type="text" name="email" />
+        </div>
+        <div class="form-group">
+            <label>Enter your full name</label>
+            <input value="{{ form.data.fullname }}" class="form-control" type="text" name="fullname" />
+        </div>
+        <div class="form-group">
+            <label>Enter your query</label>
+            <textarea class="form-control" type="text" name="query">{{ form.data.query }}</textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn">Contact Us</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

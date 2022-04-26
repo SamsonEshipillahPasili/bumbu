@@ -170,3 +170,38 @@ footer a:hover {
     display: flex;
     justify-content: center;
 }
+
+/* Alerts */
+.alert {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+}
+
+p.alert {
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #1ea945c2;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #e8035fa7;
+    color: white;
+}
+
+.alert h1 {
+    font-size: 17px;
+    padding: 5px 0 5px 0;
+}
+
+.alert li {
+    font-size: 15px;
+}
+
+.alert ul {
+    margin-left: 10px;
+}
