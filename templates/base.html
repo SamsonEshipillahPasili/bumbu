@@ -33,19 +33,13 @@
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">BLOG</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="{% url 'faq:faq' %}">FAQ</a></li>
+                <li><a href="{% url 'contact_us:contact-us' %}">CONTACT US</a></li>
             </ul>
             <ul>
                 <li style="position: relative; margin-right: 30px;">
                     <a class="icon-link" href="#">
                         <img class="icon" src="{% static 'images/shopping-cart.svg' %}" alt="cart" />
-                    </a>
-                    <span class="counter">20</span>
-                </li>
-                <li style="position: relative; margin-right: 16px;">
-                    <a href="#" class="icon-link">
-                        <img class="icon" src="{% static 'images/heart.svg' %}" alt="cart" />
                     </a>
                     <span class="counter">20</span>
                 </li>
@@ -75,13 +69,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
-                        <span>Terms & Conditions</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
+                    <a href="{% url 'faq:faq' %}">
                         <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                         <span>FAQ</span>
                     </a>
@@ -89,10 +77,10 @@
             </ul>
         </div>
         <div>
-            <a href="#" class="footer-header">Talk to Us</a>
+            <a href="{% url 'contact_us:contact-us' %}" class="footer-header">Talk to Us</a>
             <ul>
                 <li>
-                    <a href="">
+                    <a href="{% url 'contact_us:contact-us' %}">
                         <img class="quick-link-icon" src="{% static 'images/quick-link-icon.svg' %}" alt='quick-link-icon' />
                         <span>Contact Us</span>
                     </a>
